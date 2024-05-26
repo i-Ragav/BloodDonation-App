@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation App</title>
+    <link rel="stylesheet" href="./static/style/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blood Donation App</h1>
+        <form id="donorForm">
+            <h2>Add New Donor</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" required><br>
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" required><br>
+            <label for="bloodType">Blood Type:</label>
+            <select id="bloodType">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B-">B-</option>
+                <option value="O-">O-</option>
+                <option value="O+">O+</option>
+                <option value="B+">B+</option>
+            </select><br>
+            <label for="contactInfo">Contact Info:</label>
+            <input type="text" id="contactInfo" required><br>
+            <label for="lastDonationDate">Last Donation Date:</label>
+            <input type="date" id="lastDonationDate" required><br>
+            <label for="medicalHistory">Medical History:</label>
+            <textarea id="medicalHistory"></textarea><br>
+            <button type="submit">Add Donor</button>
+        </form>
+        <div id="recipientSearch">
+            <h2>Search Recipients</h2>
+            <label for="bloodTypeSearch">Blood Type:</label>
+            <input type="text" id="bloodTypeSearch">
+            <button onclick="searchRecipients()">Search</button>
+            <div id="recipientList"></div>
+        </div>
+    </div>
+    <script src="./static/script/script.js"></script>
+</body>
+</html>
