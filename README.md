@@ -7,3 +7,5 @@ This project aims to simplify the process of finding and registering blood donor
 - **Search Functionality**: Easily search for donors by blood group.
 
 Currently, this project is under development. Contributions are welcome!
+
+Hai Hai... Hoi Hoiii!!!
